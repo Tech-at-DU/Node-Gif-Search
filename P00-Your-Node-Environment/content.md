@@ -1,7 +1,4 @@
----
-title: "Setting up your NodeJS environment"
-slug: your-node-environment
----
+# Your Node Enviornment
 
 NodeJS or node.js or just node, is a web server built with JavaScript. But... JavaScript is for the client!? What's going on!?
 
@@ -31,10 +28,8 @@ If you don't already have Homebrew installed, install that first and then NodeJS
 
 ## Mac Instructions:
 
-> [action]
->
-> Open your terminal and run the following commands to install homebrew and then nodejs:
->
+Open your terminal and run the following commands to install homebrew and then nodejs:
+
 ```bash
   $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   $ brew install node
@@ -42,7 +37,7 @@ If you don't already have Homebrew installed, install that first and then NodeJS
 
 <!-- -->
 
-> [info]
+
 > **IMPORTANT**—Whenever you see the `$` in a command, that means it should be called in your computer's terminal. Remember: Don't include the `$` in your command.`
 
 ## Linux Instructions
@@ -53,16 +48,10 @@ Now open your Terminal program and type `npm -v` to check if npm is installed. T
 
 # Starting a Node Project
 
-> [info]
->
 > If you do not already have a text editor, download and install either the [Atom Text Editor](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/).
 
-<!-- -->
+Use npm to initialize a Node project from the terminal.
 
-> [action]
->
-> Use npm to initialize a Node project from the terminal.
->
 ```bash
 $ mkdir gif-search
 $ cd gif-search
@@ -73,10 +62,8 @@ $ atom . # to open your project in the Atom text editor
 
 Now that you have initialized a node project with `npm init`, you will see that you have a `package.json` file in your folder.
 
-> [action]
->
-> Open up your `package.json` file and set your `main` file to `app.js`:
->
+Open up your `package.json` file and set your `main` file to `app.js`:
+
 ```json
 {
   ...
@@ -91,9 +78,7 @@ In future steps we'll create the `app.js` file. That is a more conventional name
 
 As you go through this tutorial, you will be using a program called [Git](https://git-scm.com/) and a website called [GitHub](https://github.com/). Git is a form of **version control** and GitHub is a hosting service for version control. In short, version control is a way to save your work in milestones as you build out your project (i.e. saving different "versions" of the project through various stages of its lifecycle). These "milestones" are known as **commits**, which we'll be making at the end of each chapter (if not multiple times within it). This is a requirement, you must make a commit whenever the tutorial prompts you. This not only further enforces best practices for software engineering, but also will help you more easily figure out where a bug originated from if you break your progress up into discrete, trackable chunks.
 
-> [action]
->
-> Read [this article](https://www.atlassian.com/git/tutorials/why-git) on why you should be using Git, and the advantages it offers
+Read [this article](https://www.atlassian.com/git/tutorials/why-git) on why you should be using Git, and the advantages it offers
 
 When prompted to commit, you'll see a sample commit message. Feel free to use your own message, so long as it clearly and concisely covers the work done.
 
@@ -101,17 +86,14 @@ Lastly, the commit prompts in this tutorial should be the minimum amount of time
 
 # Git Setup
 
-> [action]
->
-> 1. [Follow these instructions](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git) to install Git on your computer for your operating system
-> 1. Follow the [GitHub sign up instructions](https://github.com/) and make an account.
-> 1. You will also need to [add your SSH key](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) to your GitHub account in order to make commits.
+1. [Follow these instructions](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git) to install Git on your computer for your operating system
+1. Follow the [GitHub sign up instructions](https://github.com/) and make an account.
+1. You will also need to [add your SSH key](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account) to your GitHub account in order to make commits.
 
 You should now be all set up with Git and GitHub! In Git we use **repositories, or repos,** to hold our projects. Now let's make that first commit:
 
->[action]
-> Make your first commit
->
+Make your first commit
+
 ```bash
 # initialize git in our project
 $ git init
@@ -175,23 +157,21 @@ Now we'll add some code to `app.js` that will add express, and then uses it to s
 
 This code also has some **Comments** that separate out the various parts of the `app.js` file. Throughout this tutorial, we'll be updating this file, so keep your eyes peeled for these comments as clues for where code goes.
 
-> [action]
->
-> Add the following to `app.js`:
->
+Add the following to `app.js`:
+
 ```js
 // Require Libraries
 const express = require('express');
->
+
 // App Setup
 const app = express();
->
+
 // Middleware
->
+
 // Routes
->
+
 // Start Server
->
+
 app.listen(3000, () => {
   console.log('Gif Search listening on port localhost:3000!');
 });
@@ -199,9 +179,8 @@ app.listen(3000, () => {
 
 Notice that last line which tells the app to log a message on port 3000. Once we start the server, we should see that message in the terminal!
 
-> [action]
-> Run your server from your terminal with this command:
->
+Run your server from your terminal with this command:
+
 ```bash
 $ node app.js
 ```
@@ -211,15 +190,13 @@ You should see "Gif Search listening on port 3000!" output in your terminal. And
 
 Using the `$ node` method to start your server is kinda annoying because you'll have to stop and restart your server every time you make a change. Instead let's start our node server with a program called `nodemon`.
 
-> [action]
->
-> Install `nodemon` through the terminal:
->
-```bash
- $ npm install nodemon -g
- ```
+Install `nodemon` through the terminal:
 
- Now start your server by typing `$ nodemon`. Now your server will restart anytime you make any changes to your code!
+```bash
+$ npm install nodemon -g
+```
+
+Now start your server by typing `$ nodemon`. Now your server will restart anytime you make any changes to your code!
 
 # Your First Route in an Express Project
 
