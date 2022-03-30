@@ -105,16 +105,13 @@ $ git commit -m 'project init'
 
 Now we need to make a repository for our project.
 
-> [action]
->
 > Go to GitHub and create a public repository called `tenor-search`. Don't worry about the `.gitignore` or `LICENSE` for now, we'll cover that another time.
 
 Finally, you need to associate it as a remote for your local git project and then push to it.
 
->[action]
->
+
 > Push your project up! Replace GITHUB-REPO-URL with your actual github repo url which you can obtain from the **Clone or download** button on the repo page
->
+
 ```bash
 # associate our github repo with our local git
 $ git remote add origin GITHUB-REPO-URL
@@ -128,9 +125,8 @@ Alright enough of that, back to the code!
 
 Now we need to add ExpressJS to this project. We will use npm to install ExpressJS and npm will add a line to our `package.json` file to track the libraries that our project uses. It will also add ExpressJS and its dependences to a `node_modules` folder inside our project. You won't ever need to touch any of the files inside the `node_modules` folder during this tutorial, it's just used to hold libraries and dependencies we add to the project.
 
-> [action]
 > Install ExpressJS to your project
->
+
 ```bash
 $ npm install express --save
 ```
@@ -141,16 +137,12 @@ Add an `app.js` file to your project.
 
 You can either use your terminal to create your root file `app.js` or you can use your text editor.
 
-> [action]
->
 > Watch this brief video to review how to do this on MacOS for terminal or Finder/Atom:
->
-> ![ms-video-youtube](https://www.youtube.com/watch?v=DI77fe5aEOM)
+
+> ![Watch the video](https://www.youtube.com/watch?v=DI77fe5aEOM)
 
 Using either method you learned in the video, let's add some files to our project:
 
-> [action]
->
 > Create an `app.js` file in your project directory
 
 Now we'll add some code to `app.js` that will add express, and then uses it to start a web server.
@@ -220,10 +212,8 @@ This is an example of an endpoint or route. It is called a **GET** route because
 
 For reference you can look at [ExpressJS's Getting Started](https://expressjs.com/en/starter/installing.html) docs
 
-> [action]
->
 > Add the following code directly below the `// Routes` comment in `app.js`, which will print 'Hello Squirrel' in the web browser.
->
+
 ```js
 // Routes
 app.get('/', (req, res) => {
@@ -237,18 +227,15 @@ Go back to `localhost:3000` in your browser and make sure it says "Hello Squirre
 
 Whenever you see a green box like the one below, it marks a **stretch challenge**. Unlike action boxes (denoted by the keyboard icon), stretch challenges are are optional, and aren't needed to complete the tutorial. If you're looking for an extra challenge though, we encourage you to take them on!
 
-> [challenge]
->
+
 > If you push the above code, you'll also be pushing up `node_modules`. We only care about that in our local development environment, and don't need to track that in Git (it also takes up a lot of space)
->
+
 > Before you add/commit/push below, add a [gitignore](https://git-scm.com/docs/gitignore) file and edit it so that `node_modules` doesn't get tracked in git. What else shouldn't be tracked?
 
 Make sure you do the below steps, regardless of if you did the above challenge or not:
 
->[action]
->
 > Add/commit/push your code!
->
+
 ```bash
 $ git add .
 $ git commit -m 'first route built'
