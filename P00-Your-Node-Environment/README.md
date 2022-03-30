@@ -139,7 +139,7 @@ You can either use your terminal to create your root file `app.js` or you can us
 
 > Watch this brief video to review how to do this on MacOS for terminal or Finder/Atom:
 
-> ![Watch the video](https://www.youtube.com/watch?v=DI77fe5aEOM)
+> [![Watch the video](https://img.youtube.com/vi/DI77fe5aEOM/maxresdefault.jpg)](https://www.youtube.com/watch?v=DI77fe5aEOM)
 
 Using either method you learned in the video, let's add some files to our project:
 
