@@ -1,6 +1,5 @@
 ---
-title: "Now Add Styling"
-slug: add-styling
+# Now Add Styling
 ---
 
 Let's look back at what we did in order:
