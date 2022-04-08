@@ -1,6 +1,5 @@
 ---
-title: "Searching Tenor"
-slug: search-gifs
+# Searching Tenor
 ---
 
 So now we have done some templating, so we are ready to build the actual feature of the app we want: a gif Search.
