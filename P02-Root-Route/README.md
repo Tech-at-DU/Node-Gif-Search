@@ -1,6 +1,4 @@
----
 # Adding a Home Page
----
 
 So we have NodeJS and ExpressJS working and we've added a templating engine middleware to render HTML templates. So now we need to create a true homepage for our Tenor Search app.
 
