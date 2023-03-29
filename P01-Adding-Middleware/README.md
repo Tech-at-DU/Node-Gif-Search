@@ -22,10 +22,19 @@ Now that it's installed, let's add handlebars to the `Middleware` section of `ap
 
 ```js
 // Middleware
-const exphbs  = require('express-handlebars');
+// Allow Express (our web framework) to render HTML templates and send them back to the client using a new function
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+const hbs = handlebars.create({
+    // Specify helpers which are only registered on this instance.
+    helpers: {
+        foo() { return 'FOO!'; },
+        bar() { return 'BAR!'; }
+    }
+});
+
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+app.set('views', './views');
 ```
 
 This "middleware" library will be used to allow Express (our web framework) to render HTML templates and send them back to the client using a new function: `res.render('template-name', { variables })`
