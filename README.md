@@ -12,3 +12,7 @@ After completing this tutorial, you will be able to:
 Instructions:
 
 1. [Your Node Environment](P00-Your-Node-Environment)
+2. [Adding Middleware](P01-Adding-Middleware)
+3. [Root Route](P02-Root-Route)
+4. [Search Gifs](P03-Search-Gifs)
+5. [Add Styling](P04-Add-Styling)
