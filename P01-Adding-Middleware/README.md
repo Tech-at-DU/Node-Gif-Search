@@ -23,6 +23,7 @@ Now that it's installed, let's add handlebars to the `Middleware` section of `ap
 ```js
 // Middleware
 // Allow Express (our web framework) to render HTML templates and send them back to the client using a new function
+const handlebars = require('express-handlebars');
 
 const hbs = handlebars.create({
     // Specify helpers which are only registered on this instance.
