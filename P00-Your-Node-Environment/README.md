@@ -28,10 +28,9 @@ If you don't already have Homebrew installed, install that first and then NodeJS
 
 ## Mac Instructions:
 
-Open your terminal and run the following commands to install homebrew and then nodejs:
+Open your terminal and run the following command to install Node:
 
 ```bash
-  $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   $ brew install node
 ```
 
